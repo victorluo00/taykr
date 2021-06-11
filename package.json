@@ -1,0 +1,54 @@
+{
+  "name": "taykr",
+  "version": "1.0.0",
+  "description": "Note Taking app that helps you learn as you type",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node backend/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development concurrently \"nodemon backend/server.js\" \"webpack serve --open\"",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "dependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.13.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@reduxjs/toolkit": "^1.6.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "browserify": "^17.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.12.3",
+    "express-async-handler": "^1.1.4",
+    "gulp": "^4.0.2",
+    "jest": "^27.0.4",
+    "mongoose": "^5.12.13",
+    "prop-types": "^15.6.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "isomorphic-fetch": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "redux-devtools": "^3.7.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
